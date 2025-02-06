@@ -1,0 +1,28 @@
+{
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Vitest Debug Current File",
+        "autoAttachChildProcesses": true,
+        "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+        "program": "${workspaceRoot}/node-project-vitest/node_modules/vitest/vitest.mjs",
+        "args": [],
+        "smartStep": true,
+        "console": "integratedTerminal"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Vitest Debug Current File (Watch)",
+        "autoAttachChildProcesses": true,
+        "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+        "program": "${workspaceRoot}/node-project-vitest/node_modules/vitest/vitest.mjs",
+        "args": ["watch", "${relativeFile}"],
+        "smartStep": true,
+        "console": "integratedTerminal"
+      }
+    ]
+  }
